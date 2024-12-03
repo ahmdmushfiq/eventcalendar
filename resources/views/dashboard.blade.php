@@ -222,7 +222,7 @@
     $(document).ready(function() {
         calender();
         flatpickr(".flatpickr-input", {
-        theme: "material_blue", // Use a material design style
+        theme: "material_blue", 
         dateFormat: "Y-m-d",
         });
     });
@@ -271,7 +271,6 @@
         });
     });
 
-
     $(document).on('click', '#delete_event', function() {
         var id = $('#event_id').val();
         swal.fire({
@@ -307,7 +306,6 @@
         });
     });
  
-    
     $('#form-event').submit(function(e) {
         e.preventDefault();
         var formData = $(this).serialize();
@@ -331,10 +329,6 @@
         });
     })
    
-
-   
-
-
     function calender() {
         $('#work-details').html('');
         calendar = new FullCalendar.Calendar(calendarEl, {
@@ -379,15 +373,6 @@
         });
         calendar.render();
     }
-
-    
-
-
-
-
-    
-
-   
 </script>
 
 </html>
