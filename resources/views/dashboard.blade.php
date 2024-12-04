@@ -18,6 +18,9 @@
         #calendar .fc-daygrid-day {
             cursor: pointer;
         }
+        #calendar .fc-daygrid-day:hover {
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 
